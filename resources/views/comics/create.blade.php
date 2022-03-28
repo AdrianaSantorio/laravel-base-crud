@@ -1,9 +1,12 @@
 @extends('layouts.main')
 
+@section('styles')
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+@endsection
+
 @section('content')
 <main>
-    <div class="container">
-        <h2>ciao sono il create</h2>
+    <div class="container my-5">
         <form action="{{route('comics.store')}}" method="POST" class="row g-3">
             @csrf
             {{-- title --}}
@@ -46,7 +49,7 @@
             </div>
             {{-- button --}}
             <div class="col-12 text-end">
-                <button type="submit" class="btn btn-success">Create</button>
+                <button type="submit" class="btn btn-success mx-4">Create</button>
                 <button type="reset" class="btn btn-danger">Cancel</button>
             </div>
         </form>

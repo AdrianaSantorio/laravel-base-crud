@@ -1,6 +1,11 @@
 @extends('layouts.main')
 
+@section('title', 'home')
+
 @section('content')
-<h2>ciao sono la home</h2>    
-<a href="{{route('comics.index')}}">indice dei fumetti</a>
+
+@include('includes.comic_gallery')
+</section>
+{{-- FEATURED --}}
+@include('includes.featured')
 @endsection

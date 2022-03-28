@@ -89,4 +89,13 @@ class ComicController extends Controller
     {
         //
     }
+
+    //## non-crud methods
+
+    public function display()
+    {
+        //
+        $comics = Comic::all();
+        return view('home', compact('comics'));
+    }
 }

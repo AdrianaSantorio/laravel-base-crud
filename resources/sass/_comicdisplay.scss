@@ -1,0 +1,19 @@
+#comic-display {
+    margin: 40px 0;
+    color: white;
+    display: flex;
+
+    .display-text {
+        p {
+            margin-top: 20px;
+        }
+        padding: 0 30px;
+        font-size: 0.8rem;
+    }
+
+    .comic-info {
+        margin: 30px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
