@@ -4,7 +4,7 @@
 
 @section('content')
 
-@include('includes.comic_gallery')
+@include('includes.comics.gallery')
 </section>
 {{-- FEATURED --}}
 @include('includes.featured')

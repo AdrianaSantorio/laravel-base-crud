@@ -20,7 +20,9 @@
         }
     }
 
-    .card {
+    .comic-card {
+        position: relative;
+
         figure {
             width: 100%;
 
@@ -34,6 +36,12 @@
             figcaption {
                 text-transform: uppercase;
             }
+        }
+
+        .button-container {
+            position: absolute;
+            top: 1px;
+            right: 5px;
         }
     }
 
@@ -50,19 +58,6 @@
         color: $main-text-color;
         background-color: $main-color;
         transform: translate(0, -50%);
-        text-transform: uppercase;
-    }
-
-    button {
-        display: inline-block;
-        background-color: $main-color;
-        color: $main-text-color;
-        padding: 0.5rem;
-        min-width: 180px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        margin: 15px 0;
         text-transform: uppercase;
     }
 }

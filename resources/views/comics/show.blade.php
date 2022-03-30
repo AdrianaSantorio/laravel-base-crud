@@ -13,7 +13,22 @@
                     <span>On sale: {{$comic->sale_date}}</span>
                     <span>${{$comic->price}}</span>
                 </div>
-                <a href="{{route('comics.index')}}" class="button">Back to comics</a>
+                <div class="button-container">
+                    {{-- edit --}}
+                    <a href="{{route('comics.edit', $comic->id)}}" class="button bg-warning">
+                        <i class="fa-solid fa-pencil"></i>
+                    </a>
+                    {{-- delete --}}
+                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST" >
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="bg-danger button">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </form>
+                    {{-- back --}}
+                    <a href="{{route('comics.index')}}" class="button bg-main">Back to comics</a>
+                </div>
             </div>
         </div>
     </div>

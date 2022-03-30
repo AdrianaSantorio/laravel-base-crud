@@ -25,6 +25,27 @@
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
         border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    > * {
+        margin-left: 20px;
+    }
+}
+//background
+
+.bg-main {
     background-color: $main-color;
-    margin: 20px;
+}
+
+.bg-warning {
+    background-color: yellow;
+}
+
+.bg-danger {
+    background-color: red;
 }

@@ -3,9 +3,9 @@
 @section('content')
 <main>
     <div class="container">
-        @include('includes.comic_gallery')
-        <div>
-            <a href="{{route('comics.create')}}" class="button">Aggiungi</a>
+        @include('includes.comics.gallery')
+        <div class="button-container">
+            <a href="{{route('comics.create')}}" class="button bg-main">Aggiungi</a>
         </div>
     </div>
 </main>   
