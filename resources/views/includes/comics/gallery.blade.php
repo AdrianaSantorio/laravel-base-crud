@@ -22,7 +22,7 @@
                                         <i class="fa-solid fa-pencil"></i>
                                     </a>
                                     {{-- delete --}}
-                                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST" >
+                                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="delete-form" >
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="bg-danger button">

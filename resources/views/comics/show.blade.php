@@ -19,7 +19,7 @@
                         <i class="fa-solid fa-pencil"></i>
                     </a>
                     {{-- delete --}}
-                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST" >
+                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="delete-form" >
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="bg-danger button">
@@ -33,4 +33,8 @@
         </div>
     </div>
 </main>   
+@endsection
+
+@section('scripts')
+<script src="{{asset(('js/delete-confirm.js'))}}" defer></script>
 @endsection
